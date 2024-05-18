@@ -6,32 +6,47 @@
     <title>That Cool WeatherApp</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h2>Vienna</h2>
-        <div><h1>🌤️ 12°C</h1></div>
-        <p>
-          Tuesday 14:49, scattered clouds
-          <br />
-          Humidity: 66%, Wind: 3.13km/h
-        </p>
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/mello-e" target="_blank">Maryam Maleki</a>, is
-      open-sourced on
-      <a href="https://github.com/mello-e/WeatherApp" target="_blank">GitHub</a>
-      and hosted on
-      <a href="https://elaborate-gumdrop-ca7950.netlify.app" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <h1 class="weather-app-city">Vienna</h1>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <h2>
+              <div class="weather-app-temperature">12</div>
+              <div class="weatehr-app-unit">°C</div>
+            </h2>
+          </div>
+          <p class="weather-app-details">
+            Tuesday 14:49, scattered clouds
+            <br />
+            Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+          </p>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/mello-e" target="_blank">Maryam Maleki</a>,
+        is open-sourced on
+        <a href="https://github.com/mello-e/WeatherApp" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://elaborate-gumdrop-ca7950.netlify.app" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
