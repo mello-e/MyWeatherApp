@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>That Cool WeatherApp</title>
+    <title>MELLO's WeatherApp</title>
   </head>
   <body>
     <div class="weather-app">
@@ -29,15 +29,16 @@
       </header>
       <main>
         <div class="weather-app-data">
-          <h1 class="weather-app-city" id="city">Vienna</h1>
+          <h1 class="weather-app-city" id="city"></h1>
           <div class="weather-app-temperature-container">
-            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-icon" id="icon"></div>
             <div class="weather-app-temperature" id="temperature">12</div>
             <div class="weatehr-app-unit">°C</div>
           </div>
           <p class="weather-app-details">
-            Tuesday 14:49, scattered clouds, Humidity: <strong>66%</strong>,
-            Wind: <strong>3.13km/h</strong>
+            <span id="time"></span>, <span id="description"></span>, Humidity:
+            <strong id="humidity"></strong>, Wind:
+            <strong id="wind-speed"></strong>
           </p>
         </div>
       </main>
@@ -45,11 +46,11 @@
         This project was coded by
         <a href="https://github.com/mello-e" target="_blank">Maryam Maleki</a>,
         is open-sourced on
-        <a href="https://github.com/mello-e/WeatherApp" target="_blank"
+        <a href="https://github.com/mello-e/MyWeatherApp" target="_blank"
           >GitHub</a
         >
         and hosted on
-        <a href="https://elaborate-gumdrop-ca7950.netlify.app" target="_blank"
+        <a href="https://mello-weather-app.netlify.app" target="_blank"
           >Netlify</a
         >
       </footer>
