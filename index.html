@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>That Cool WeatherApp</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
           <h1 class="weather-app-city" id="city">Vienna</h1>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">🌤️</div>
-            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-temperature" id="temperature">12</div>
             <div class="weatehr-app-unit">°C</div>
           </div>
           <p class="weather-app-details">
